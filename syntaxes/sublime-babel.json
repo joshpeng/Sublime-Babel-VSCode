@@ -93,11 +93,11 @@
       "patterns": [
         {
           "name": "meta.group.braces.curly.js",
-          "begin": "{",
+          "begin": "\\{",
           "beginCaptures": {
             "0": { "name": "meta.brace.curly.begin.js" }
           },
-          "end": "}",
+          "end": "\\}",
           "endCaptures": {
             "0": { "name": "meta.brace.curly.end.js" }
           },
@@ -746,7 +746,7 @@
       "patterns": [
         {
           "name": "meta.function-call.static.without-arguments.js",
-          "match": "\\s*(?:(?<=\\.)|\\b)([A-Z][$\\w]*)\\s*(\\.)([_$a-zA-Z][$\\w]*)\\s*(\\(\\s*\\))",
+          "match": "(?x)(?:(?<=\\.)|\\b)([A-Z][$\\w]*)\\s*(\\.)([_$a-zA-Z][$\\w]*)\\s*(\\(\\s*\\))",
           "captures": {
             "1": { "name": "variable.other.class.js" },
             "2": { "name": "keyword.operator.accessor.js" },
@@ -756,7 +756,7 @@
         },
         {
           "name": "meta.function-call.static.with-arguments.js",
-          "match": "\\s*(?:(?<=\\.)|\\b)\\s*([A-Z][$\\w]*)\\s*(\\.)([_$a-zA-Z][$\\w]*)\\s*(?=\\()",
+          "match": "(?x)(?:(?<=\\.)|\\b)\\s*([A-Z][$\\w]*)\\s*(\\.)([_$a-zA-Z][$\\w]*)\\s*(?=\\()",
           "captures": {
             "1": { "name": "variable.other.class.js" },
             "2": { "name": "keyword.operator.accessor.js" },
@@ -974,40 +974,40 @@
       "patterns": [
         {
           "name": "keyword.operator.js",
-          "match": "\\s*(?<!\\.)\\b(delete|in|instanceof|new|of|typeof|void|with)\\b"
+          "match": "(?x)(?<!\\.)\\b(delete|in|instanceof|new|of|typeof|void|with)\\b"
         },
         {
           "name": "keyword.operator.logical.js",
-          "match": "\\s*(!(?!=)|&&|\\|\\|)"
+          "match": "(?x)(!(?!=)|&&|\\|\\|)"
         },
         {
           "name": "keyword.operator.assignment.js",
-          "match": "\\s*(=(?!=))"
+          "match": "(?x)(=(?!=))"
         },
         {
           "name": "keyword.operator.assignment.augmented.js",
-          "match": "\\s*(%=|&=|\\*=|\\+=|-=|/=|\\^=|\\|=|<<=|>>=|>>>=)"
+          "match": "(?x)(%=|&=|\\*=|\\+=|-=|/=|\\^=|\\|=|<<=|>>=|>>>=)"
         },
         {
           "name": "keyword.operator.bitwise.js",
-          "match": "\\s*(~|<<|>>>|>>|&|\\^|\\|)"
+          "match": "(?x)(~|<<|>>>|>>|&|\\^|\\|)"
         },
         {
           "name": "keyword.operator.relational.js",
-          "match": "\\s*(<=|>=|<|>)"
+          "match": "(?x)(<=|>=|<|>)"
         },
         {
           "name": "keyword.operator.comparison.js",
-          "match": "\\s*(===|!==|==|!=)"
+          "match": "(?x)(===|!==|==|!=)"
         },
         {
           "name": "keyword.operator.arithmetic.js",
-          "match": "\\s*(--|\\+\\+|/[^/]|%|\\*|\\+|-)"
+          "match": "(?x)(--|\\+\\+|/[^/]|%|\\*|\\+|-)"
         },
         {
           "comment": "ternary operator - make sure end : is consumed to avoid mistake as flow type",
-          "begin": "\\s*(\\?)",
-          "end": "\\s*(:)",
+          "begin": "(?x)(\\?)",
+          "end": "(?x)(:)",
           "beginCaptures": {
             "1": { "name": "keyword.operator.ternary.js" }
           },
@@ -1020,7 +1020,7 @@
         },
         {
           "name": "keyword.operator.spread.js",
-          "match": "\\s*(?<!\\.)\\.\\.\\."
+          "match": "(?x)(?<!\\.)\\.\\.\\."
         },
         {
           "name": "keyword.operator.accessor.js",
@@ -1031,7 +1031,7 @@
     "literal-labels": {
       "patterns": [
         {
-          "match": "(?<!\\?)(?<!\\?\\s)(?=(?>((')((?>[^'\\\\]|\\\\.)*)('))|((\")((?>[^\"\\\\]|\\\\.)*)(\"))|)\\s*:)",
+          "begin": "(?x)(?<!\\?)(?<!\\?\\s)(?=(?>((')((?>[^'\\\\]|\\\\.)*)('))|((\")((?>[^\"\\\\]|\\\\.)*)(\"))|)\\s*:)",
           "end": ":",
           "endCaptures": {
             "0": { "name": "punctuation.separator.key-value.js" }
@@ -1042,7 +1042,7 @@
         },
         {
           "name": "constant.other.object.key.js",
-          "match": "(?<!\\.|\\?|\\?\\s)([_$a-zA-Z][$\\w]*)\\s*(:)",
+          "match": "(?<!\\.|\\?|\\?\\s)([_$a-zA-Z][$\\w]*)\\s*(:)(?!:)",
           "captures": {
             "1": { "name": "string.unquoted.label.js" },
             "2": { "name": "punctuation.separator.key-value.js" }
@@ -1112,7 +1112,8 @@
           },
           "endCaptures": {
             "1": { "name": "punctuation.definition.string.end.js"},
-            "2": { "name": "invalid.illegal.newline.js"}
+            "2": { "name": "punctuation.definition.string.end.js"},
+            "3": { "name": "invalid.illegal.newline.js"}
           },
           "patterns": [
             { "include": "#string-content" }
