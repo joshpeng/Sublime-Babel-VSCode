@@ -7,7 +7,7 @@ When using your favorite theme, Visual Studio Code doesn't always display syntax
 
 1. Uninstall any preexisting JavaScript grammar extensions (e.g. [Latest TypeScript and JavaScript Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.typescript-javascript-grammar), [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring)) to prevent conflicts
 2. Install Sublime Babel via `ext install vscode-eslint` in Command Palette
-3. When opening a `.js` or `.jsx` file, ensure the language mode is set to `JavaScript (Babel)`
+3. When opening a `.js` or `.jsx` file, ensure the language mode is set to `JavaScript (Babel)` or `JavaScript React (Babel)`
 
 ![statusbar](https://raw.githubusercontent.com/joshpeng/Sublime-Babel-VSCode/master/images/statusbar.png)
 
