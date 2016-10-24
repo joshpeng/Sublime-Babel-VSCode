@@ -1,7 +1,7 @@
 # Sublime Babel
 When using your favorite theme, Visual Studio Code doesn't always display syntax highlight colors as expected. This extension tries to mimic Sublime's [babel-sublime](https://packagecontrol.io/packages/Babel) package as much as possible to address poor coloring.
 
-**Note**: VS Code may interpret scopes slightly differently than Sublime so it won't always be 100% the same between the two editors unless you tweak your theme a bit. Hopefully it is close though.
+**Note**: VS Code may interpret scopes slightly differently than Sublime so it won't always be 100% the same. You would need to tweak your theme's scoping a little bit to match it exactly. Hopefully it is close enough though out-of-the-box.
 
 ## Installation
 
@@ -24,3 +24,8 @@ Here is a quick example of the improved grammar compared against the popular [Ba
 ![Sublime Babel](https://raw.githubusercontent.com/joshpeng/Sublime-Babel-VSCode/master/images/sublime-babel.png)
 
 ![React](https://raw.githubusercontent.com/joshpeng/Sublime-Babel-VSCode/master/images/react.png)
+
+
+
+## Changelog
+Please see [here](https://github.com/joshpeng/Sublime-Babel-VSCode/blob/master/CHANGELOG.md).
