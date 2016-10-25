@@ -11,7 +11,17 @@ When using your favorite theme, Visual Studio Code doesn't always display syntax
 
 ![statusbar](https://raw.githubusercontent.com/joshpeng/Sublime-Babel-VSCode/master/images/statusbar.png)
 
-For best results, please consider using my [Charcoal Oceanic Next](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-charcoal-oceanicnext) theme.
+
+
+## Suggested Color Themes
+
+For best results, please consider using these optimized themes. Other ported themes will work too, but may not necessarily handle the differences between Sublime and VS Code properly.
+
+[Charcoal Oceanic Next](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-charcoal-oceanicnext)
+
+[One Dark](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-onedark-sublime)
+
+[Tomorrow Kit](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-tomorrowkit-sublime)
 
 
 
