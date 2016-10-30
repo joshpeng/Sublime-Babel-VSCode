@@ -2,7 +2,7 @@
     "name": "sublime-babel-vscode",
     "displayName": "Sublime Babel",
     "description": "Sublime Text's babel-sublime grammar in VS Code.",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "publisher": "joshpeng",
     "engines": {
         "vscode": "^1.5.0"
