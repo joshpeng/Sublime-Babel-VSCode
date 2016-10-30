@@ -1,4 +1,4 @@
-# Sublime Babel
+# Sublime Babel [![VS Code marketplace button](http://vsmarketplacebadge.apphb.com/installs/joshpeng.sublime-babel-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode)
 When using your favorite theme, Visual Studio Code doesn't always display syntax highlight colors as expected. This extension tries to mimic Sublime's [babel-sublime](https://packagecontrol.io/packages/Babel) package as much as possible to address poor coloring.
 
 All other JS grammars are either incorrect or incomplete.
@@ -24,12 +24,14 @@ All other JS grammars are either incorrect or incomplete.
 
 
 
-## Themes
+## Suggested Color Themes
 
-For best results, please consider using Sublime Babel optimized themes.
+For best results, please consider using these optimized themes. Other ported themes will work too, but may not necessarily handle the differences between Sublime and VS Code properly.
 
 [One Dark](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-onedark-sublime)
+
 [Charcoal Oceanic Next](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-charcoal-oceanicnext)
+
 [Tomorrow Kit](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-tomorrowkit-sublime)
 
 
