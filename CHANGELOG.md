@@ -1,4 +1,7 @@
 # Changelog
+v0.2.3
+- Fixed README typos
+
 v0.2.2
 - Updated README instructions and links
 

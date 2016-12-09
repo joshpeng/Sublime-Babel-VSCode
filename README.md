@@ -1,14 +1,14 @@
 # Sublime Babel [![VS Code marketplace button](http://vsmarketplacebadge.apphb.com/installs/joshpeng.sublime-babel-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode)
 When using your favorite theme, Visual Studio Code doesn't always display syntax highlight colors as expected. This extension tries to mimic Sublime's [babel-sublime](https://packagecontrol.io/packages/Babel) package as much as possible to address poor coloring.
 
-All other JS grammars are either incorrect or incomplete.
+Other JS grammars are currently either incorrect or incomplete.
 
 | Grammar                                  | Description                              |
 | ---------------------------------------- | ---------------------------------------- |
-| [Sublime Babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) | Correct, standard syntax highlighting    |
+| [Sublime Babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) | Syntax highlighting working with most preexisting .tmThemes |
 | [JavaScript Atom Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-atom-grammar) | Immature JSX support                     |
-| [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring) | Severely mis-scoped, results in an overuse of reds |
-| [Latest TypeScript and JavaScript Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.typescript-javascript-grammar) | Heavy red/grey-outs due to non-standard scoping |
+| [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring) | Incorrect colors in many scenarios due to missing or incorrect scopes |
+| [Latest TypeScript and JavaScript Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.typescript-javascript-grammar) | Incorrect colors in many scenarios due to non-standard scoping |
 
 **Note**: VS Code may interpret scopes slightly differently than Sublime so it won't always be 100% the same. You may need to tweak your theme's scoping a little bit to match it exactly. Hopefully it is close enough though out-of-the-box for the majority of preexisting tmThemes.
 
@@ -17,7 +17,7 @@ All other JS grammars are either incorrect or incomplete.
 ## Installation
 
 1. Uninstall any preexisting JavaScript grammar extensions (e.g. [Latest TypeScript and JavaScript Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.typescript-javascript-grammar), [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring)) to prevent conflicts
-2. Install Sublime Babel via `ext install vscode-eslint` in Command Palette
+2. Install Sublime Babel via `ext install sublime-babel-vscode` in Command Palette
 3. When opening a `.js` or `.jsx` file, ensure the language mode is set to `JavaScript (Babel)` or `JavaScript React (Babel)`
 
 ![statusbar](https://raw.githubusercontent.com/joshpeng/Sublime-Babel-VSCode/master/images/statusbar.png)
