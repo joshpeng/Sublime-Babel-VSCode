@@ -1301,6 +1301,10 @@
             "4": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" }
           },
           "patterns": [
+            {
+              "name": "meta.tag.jsx entity.name.tag.jsx",
+              "match": "(?<=</)(.*?)(?=>)"
+            },
             { "include": "#jsx-tag-end-implicit" },
             { "include": "#jsx-attributes" }
           ]
