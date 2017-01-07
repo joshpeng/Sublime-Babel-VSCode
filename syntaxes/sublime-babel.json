@@ -253,6 +253,7 @@
               },
               "patterns": [
                 { "include": "#es7-decorators" },
+                { "include": "#literal-arrow-function"},
                 { "include": "#class-properties" },
                 { "include": "#class-method-definition" },
                 { "include": "#class-method-storage" },

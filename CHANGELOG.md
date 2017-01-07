@@ -1,4 +1,7 @@
 # Changelog
+v.NEXT
+- Fixed [#1](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/1), [#4](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/4). ES6 arrow functions colored properly
+
 v0.2.3
 - Fixed README typos
 
