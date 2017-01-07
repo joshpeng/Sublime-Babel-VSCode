@@ -27,6 +27,7 @@
       "patterns": [
         { "include": "#merge-conflits" },
         { "include": "#literal-regexp", "comment": "before operators and keywords to avoid ambiguities" },
+        { "include": "#literal-arrow-function-implicit" },
         { "include": "#literal-jsx" },
         { "include": "#es7-decorators" },
         { "include": "#support-class" },
@@ -1270,9 +1271,61 @@
         }
       ]
     },
+    "literal-arrow-function-implicit": {
+      "contentName": "meta.jsx.js",
+      "begin": "(?<= =>)(?=\\s*<[_$a-zA-Z])",
+      "end": "(/>)|(</)(.*)(>)",
+      "endCaptures": {
+        "1": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" },
+        "2": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" },
+        "3": { "name": "meta.tag.jsx entity.name.tag.jsx" },
+        "4": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" }
+      },
+      "patterns": [
+        { "include": "#jsx-tag-start-implicit" }
+      ]
+    },
+    "jsx-tag-start-implicit": {
+      "patterns": [
+        {
+          "begin": "(<)([_$a-zA-Z][-$:.\\w]*[$\\w]*)",
+          "beginCaptures": {
+            "1": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" },
+            "2": { "name": "meta.tag.jsx entity.name.tag.jsx" }
+          },
+          "end": "(?=(</)(\\2)(>)|(/>))",
+          "endCaptures": {
+            "1": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" },
+            "2": { "name": "meta.tag.jsx entity.name.tag.jsx" },
+            "3": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" },
+            "4": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" }
+          },
+          "patterns": [
+            { "include": "#jsx-tag-end-implicit" },
+            { "include": "#jsx-attributes" }
+          ]
+        },
+        {
+          "name": "invalid.illegal.tag.incomplete.jsx",
+          "match": "<"
+        }
+      ]
+    },
+    "jsx-tag-end-implicit": {
+      "begin": ">",
+      "beginCaptures": {
+        "0": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" }
+      },
+      "end": "(?=</)",
+      "patterns": [
+        { "include": "#jsx-tag-start-implicit" },
+        { "include": "#jsx-evaluated-code" },
+        { "include": "#jsx-entities" }
+      ]
+    },
     "literal-jsx": {
       "contentName": "meta.jsx.js",
-      "begin": "(?<=\\(|\\{|\\[|,|&&|\\|\\||\\?|:|=|=>|\\Wreturn|^return|^)(?=\\s*<[_$a-zA-Z])",
+      "begin": "(?<=\\(|\\{|\\[|,|&&|\\|\\||\\?|:|=|\\Wreturn|^return|^)(?=\\s*<[_$a-zA-Z])",
       "end": "(?<=/>|>)",
       "patterns": [
         { "include": "#jsx-tag-start" }
