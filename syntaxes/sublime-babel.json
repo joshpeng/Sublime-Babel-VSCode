@@ -1273,8 +1273,8 @@
     },
     "literal-arrow-function-implicit": {
       "contentName": "meta.jsx.js",
-      "begin": "(?<= =>)(?=\\s*<[_$a-zA-Z])",
-      "end": "(/>)|(</)(.*)(>)",
+      "begin": "(?<==>)(?=\\s*<[_$a-zA-Z])",
+      "end": "(/>)|(</)(.*?)(>)",
       "endCaptures": {
         "1": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" },
         "2": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" },
@@ -1293,7 +1293,7 @@
             "1": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" },
             "2": { "name": "meta.tag.jsx entity.name.tag.jsx" }
           },
-          "end": "(?=(</)(\\2)(>)|(/>))",
+          "end": "(?=(</)(\\2)(>)(?!</\\2>))|(?=(/>))",
           "endCaptures": {
             "1": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" },
             "2": { "name": "meta.tag.jsx entity.name.tag.jsx" },
@@ -1301,6 +1301,19 @@
             "4": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" }
           },
           "patterns": [
+            {
+              "begin": "(</)",
+              "beginCaptures": {
+                "1": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx" }
+              },
+              "end": "(?=>)",
+              "patterns": [
+                {
+                  "name": "meta.tag.jsx entity.name.tag.jsx",
+                  "match": "(.*?)(?=>)"
+                }
+              ]
+            },
             {
               "name": "meta.tag.jsx entity.name.tag.jsx",
               "match": "(?<=</)(.*?)(?=>)"
