@@ -1320,10 +1320,7 @@
       "beginCaptures": {
         "0": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" }
       },
-      "end": "(</)",
-      "endCaptures": {
-        "0": { "name": "meta.tag.jsx punctuation.definition.tag.begin.jsx"}
-      },
+      "end": "(?=</)",
       "patterns": [
         { "include": "#jsx-tag-start-implicit" },
         { "include": "#jsx-evaluated-code" },
