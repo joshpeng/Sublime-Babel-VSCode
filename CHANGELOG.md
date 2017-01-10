@@ -1,6 +1,7 @@
 # Changelog
-v.NEXT
+v0.2.4
 - Fixed [#1](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/1), [#4](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/4). ES6 arrow functions colored properly
+- Updated for VSCode 1.9's new token flattening
 
 v0.2.3
 - Fixed README typos

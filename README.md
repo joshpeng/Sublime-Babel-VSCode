@@ -1,16 +1,7 @@
 # Sublime Babel [![VS Code marketplace button](http://vsmarketplacebadge.apphb.com/installs/joshpeng.sublime-babel-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode)
-When using your favorite theme, Visual Studio Code doesn't always display syntax highlight colors as expected. This extension tries to mimic Sublime's [babel-sublime](https://packagecontrol.io/packages/Babel) package as much as possible to address poor coloring.
+When using your favorite theme, Visual Studio Code doesn't always display syntax highlight colors as expected. This extension tries to mimic Sublime Text's [babel-sublime](https://packagecontrol.io/packages/Babel) package as much as possible to address poor coloring.
 
-Other JS grammars are currently either incorrect or incomplete.
-
-| Grammar                                  | Description                              |
-| ---------------------------------------- | ---------------------------------------- |
-| [Sublime Babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) | Syntax highlighting working with most preexisting .tmThemes |
-| [JavaScript Atom Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-atom-grammar) | Immature JSX support                     |
-| [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring) | Incorrect colors in many scenarios due to missing or incorrect scopes |
-| [Latest TypeScript and JavaScript Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.typescript-javascript-grammar) | Incorrect colors in many scenarios due to non-standard scoping |
-
-**Note**: VS Code may interpret scopes slightly differently than Sublime so it won't always be 100% the same. You may need to tweak your theme's scoping a little bit to match it exactly. Hopefully it is close enough though out-of-the-box for the majority of preexisting tmThemes.
+With VS Code 1.9.0, a new token flattenizer will be implemented that finally allows VS Code to properly follow TextMate grammar rules. This significantly improves syntax highlighting with preexisting tmThemes from other editors. However, the default JavaScript grammar still needs some work to match Sublime Text. This extension solves that for you.
 
 
 
@@ -32,8 +23,6 @@ For best results, please consider using these optimized themes. Other ported the
 
 [Charcoal Oceanic Next](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-charcoal-oceanicnext)
 
-[Tomorrow Kit](https://marketplace.visualstudio.com/items?itemName=joshpeng.theme-tomorrowkit-sublime)
-
 
 
 ## Comparisons
@@ -46,7 +35,7 @@ Here is a quick example of the improved grammar compared against the popular [Ba
 
 ![React](https://raw.githubusercontent.com/joshpeng/Sublime-Babel-VSCode/master/images/react.png)
 
-
+**Note:** These screenshots and case scenarios are old, but the premise is still valid. Other grammars do not fully tokenize like how Sublime does it.
 
 ## Changelog
 Please see [here](https://github.com/joshpeng/Sublime-Babel-VSCode/blob/master/CHANGELOG.md).
