@@ -1257,7 +1257,7 @@
           }
         },
         {
-          "match": "\\s*\\b(((?<!\\.)module\\.((?<!\\,)exports|id|require|parent|filename|loaded|children)|exports))\\b",
+          "match": "\\s*\\b((?<!\\.)module\\.((?<!\\,)exports|id|require|parent|filename|loaded|children)|exports)\\b",
           "captures": {
             "1": { "name": "support.type.object.module.js" },
             "2": { "name": "keyword.operator.accessor.js" },
