@@ -1,69 +1,84 @@
 {
-    "name": "sublime-babel-vscode",
-    "displayName": "Sublime Babel",
-    "description": "Sublime Text's babel-sublime grammar in VS Code.",
-    "version": "0.2.4",
-    "publisher": "joshpeng",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "categories": [
-        "Languages"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/joshpeng/Sublime-Babel-VSCode"
-    },
-    "icon": "images/Babel.png",
-    "galleryBanner": {
-        "color": "#f5da55",
-        "theme": "light"
-    },
-    "license": "MIT",
-    "contributes": {
-        "languages": [
-            {
-                "id": "javascript",
-                "aliases": [
-                    "JavaScript (Babel)"
-                ],
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".babel",
-                    ".es6"
-                ],
-                "configuration": "./language-configuration.json"
-            },
-            {
-                "id": "javascriptreact",
-                "aliases": [
-                    "JavaScript React (Babel)"
-                ],
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".babel",
-                    ".es6"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "javascript",
-                "scopeName": "source.js",
-                "path": "./syntaxes/sublime-babel.json"
-            },
-            {
-                "language": "javascriptreact",
-                "scopeName": "source.js",
-                "path": "./syntaxes/sublime-babel.json"
-            },
-            {
-                "scopeName": "source.regexp.js",
-                "path": "./syntaxes/regex.json"
-            }
-        ]
-    }
+	"name": "sublime-babel-vscode",
+	"displayName": "Sublime Babel",
+	"description": "Sublime Text's babel-sublime grammar in VS Code.",
+	"version": "0.2.4",
+	"publisher": "joshpeng",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/joshpeng/Sublime-Babel-VSCode"
+	},
+	"icon": "images/Babel.png",
+	"galleryBanner": {
+		"color": "#f5da55",
+		"theme": "light"
+	},
+	"license": "MIT",
+	"contributes": {
+		"languages": [
+			{
+				"id": "javascript",
+				"aliases": [
+					"JavaScript (Babel)"
+				],
+				"extensions": [
+					".js",
+					".jsx",
+					".babel",
+					".es6"
+				],
+				"configuration": "./javascript-language-configuration.json"
+			},
+			{
+				"id": "javascriptreact",
+				"aliases": [
+					"JavaScript React (Babel)"
+				],
+				"extensions": [
+					".js",
+					".jsx",
+					".babel",
+					".es6"
+				],
+				"configuration": "./javascript-language-configuration.json"
+			},
+			{
+				"id": "jsx-tags",
+				"configuration": "./tags-language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "javascript",
+				"scopeName": "source.js",
+				"path": "./syntaxes/sublime-babel.json",
+				"embeddedLanguages": {
+					"meta.jsx.js": "jsx-tags"
+				}
+			},
+			{
+				"language": "javascriptreact",
+				"scopeName": "source.js",
+				"path": "./syntaxes/sublime-babel.json",
+				"embeddedLanguages": {
+					"meta.jsx.js": "jsx-tags"
+				}
+			},
+			{
+				"scopeName": "source.regexp.js",
+				"path": "./syntaxes/regex.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "b864db6b-8147-4ff8-b05a-f7c906c91f02",
+		"publisherId": "5301c829-08a8-4505-a5a0-c623ee1041cb",
+		"publisherDisplayName": "Josh Peng"
+	}
 }
