@@ -1,9 +1,9 @@
 {
-    "name": "sublime-babel-vscode",
-    "displayName": "Sublime Babel",
-    "description": "Sublime Text's babel-sublime grammar in VS Code.",
-    "version": "0.2.4",
-    "publisher": "joshpeng",
+    "name": "sublime-babel--plus-vscode",
+    "displayName": "Sublime Babel Plus",
+    "description": "Sublime Text's babel-sublime grammar with jsdoc in VS Code.",
+    "version": "0.1.0",
+    "publisher": "luongnd",
     "engines": {
         "vscode": "^1.5.0"
     },
@@ -12,7 +12,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/joshpeng/Sublime-Babel-VSCode"
+        "url": "https://github.com/luongnd/Sublime-Babel-VSCode"
     },
     "icon": "images/Babel.png",
     "galleryBanner": {
