@@ -33,7 +33,7 @@
                     ".babel",
                     ".es6"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./javascript-language-configuration.json"
             },
             {
                 "id": "javascriptreact",
@@ -46,24 +46,39 @@
                     ".babel",
                     ".es6"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./javascript-language-configuration.json"
+            },
+            {
+                "id": "jsx-tags",
+                "configuration": "./tags-language-configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "javascript",
                 "scopeName": "source.js",
-                "path": "./syntaxes/sublime-babel.json"
+                "path": "./syntaxes/sublime-babel.json",
+                "embeddedLanguages": {
+                    "meta.jsx.js": "jsx-tags"
+                }
             },
             {
                 "language": "javascriptreact",
                 "scopeName": "source.js",
-                "path": "./syntaxes/sublime-babel.json"
+                "path": "./syntaxes/sublime-babel.json",
+                "embeddedLanguages": {
+                    "meta.jsx.js": "jsx-tags"
+                }
             },
             {
                 "scopeName": "source.regexp.js",
                 "path": "./syntaxes/regex.json"
             }
         ]
+    },
+    "__metadata": {
+        "id": "b864db6b-8147-4ff8-b05a-f7c906c91f02",
+        "publisherId": "5301c829-08a8-4505-a5a0-c623ee1041cb",
+        "publisherDisplayName": "Josh Peng"
     }
 }
