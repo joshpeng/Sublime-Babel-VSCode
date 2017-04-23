@@ -1,4 +1,8 @@
 # Changelog
+v0.2.5
+- Added support for jsdoc and swagger jsdoc. Thanks [@duyluonglc](https://github.com/duyluonglc).
+- Fixed [#8](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/8). 'storage.modifier' detection for 'static' keyword was incorrect
+
 v0.2.4
 - Fixed [#1](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/1), [#4](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/4). ES6 arrow functions colored properly
 - Updated for VSCode 1.9's new token flattening
