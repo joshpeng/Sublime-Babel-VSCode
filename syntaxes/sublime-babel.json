@@ -412,6 +412,7 @@
           },
           "end": "(?=\\s*[;}])",
           "patterns": [
+            { "include": "#class-method-storage" },
             { "include": "#flowtype-annotation" },
             { "include": "#expression" }
           ]
