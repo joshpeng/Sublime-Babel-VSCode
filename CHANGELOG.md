@@ -1,6 +1,7 @@
 # Changelog
 v.NEXT
 - Fixed [#16](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/16). Support backticks as an auto closing pair
+- Fixed missing embedded languages for JSX tags
 
 v0.2.5
 - Added support for jsdoc and swagger jsdoc. Thanks [@duyluonglc](https://github.com/duyluonglc).
