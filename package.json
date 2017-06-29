@@ -2,7 +2,7 @@
     "name": "sublime-babel-vscode",
     "displayName": "Sublime Babel",
     "description": "Sublime Text's babel-sublime grammar in VS Code.",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "publisher": "joshpeng",
     "engines": {
         "vscode": "^1.5.0"
@@ -53,15 +53,17 @@
             {
                 "language": "javascript",
                 "scopeName": "source.js",
-                "path": "./syntaxes/sublime-babel.json"
+                "path": "./syntaxes/sublime-babel.json",
+                "embeddedLanguages": {
+                    "meta.tag.jsx": "jsx-tags"
+                }
             },
             {
                 "language": "javascriptreact",
                 "scopeName": "source.js",
                 "path": "./syntaxes/sublime-babel.json",
                 "embeddedLanguages": {
-                    "meta.tag.js": "jsx-tags",
-                    "meta.tag.without-attributes.js": "jsx-tags"
+                    "meta.tag.jsx": "jsx-tags"
                 }
             },
             {

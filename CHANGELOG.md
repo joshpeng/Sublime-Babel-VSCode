@@ -1,5 +1,7 @@
 # Changelog
-v.NEXT
+v0.2.6
+- Fixed [#21](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/21). Color highlighting within arrow functions were inconsistent
+- Fixed [#20](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/20). Support auto-indent of embedded HTML elements
 - Fixed [#16](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/16). Support backticks as an auto closing pair
 - Fixed missing embedded languages for JSX tags
 
