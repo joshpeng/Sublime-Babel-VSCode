@@ -1,4 +1,4 @@
-# Sublime Babel [![VS Code marketplace button](http://vsmarketplacebadge.apphb.com/installs/joshpeng.sublime-babel-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode)
+# Sublime Babel [![VS Code marketplace button](https://vsmarketplacebadge.apphb.com/installs/joshpeng.sublime-babel-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode)
 When using your favorite theme, Visual Studio Code doesn't always display syntax highlight colors as expected. This extension tries to mimic Sublime Text's [babel-sublime](https://packagecontrol.io/packages/Babel) package as much as possible to address poor coloring.
 
 With VS Code 1.9.0, a new token flattenizer will be implemented that finally allows VS Code to properly follow TextMate grammar rules. This significantly improves syntax highlighting with preexisting tmThemes from other editors. However, the default JavaScript grammar still needs some work to match Sublime Text. This extension solves that for you.
