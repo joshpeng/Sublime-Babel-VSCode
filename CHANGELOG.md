@@ -1,4 +1,7 @@
 # Changelog
+v0.2.7
+- Fixed [#11](https://github.com/joshpeng/Sublime-Babel-VSCode/pull/11). JSX embedding comments should now work.
+
 v0.2.6
 - Fixed [#21](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/21). Color highlighting within arrow functions were inconsistent
 - Fixed [#20](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/20). Support auto-indent of embedded HTML elements
