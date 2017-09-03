@@ -1,4 +1,7 @@
 # Changelog
+v0.2.8 Hot Fix
+- Fixed single-line comment regression from v0.2.7 for embedded JSX commenting
+
 v0.2.7
 - Fixed [#11](https://github.com/joshpeng/Sublime-Babel-VSCode/pull/11). JSX embedding comments should now work.
 
