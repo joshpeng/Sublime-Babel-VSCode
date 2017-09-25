@@ -2,7 +2,7 @@
 	"name": "sublime-babel-vscode",
 	"displayName": "Sublime Babel",
 	"description": "Sublime Text's babel-sublime grammar in VS Code.",
-	"version": "0.2.8",
+	"version": "0.2.9",
 	"publisher": "joshpeng",
 	"engines": {
 		"vscode": "^1.5.0"
@@ -49,7 +49,7 @@
 				"configuration": "./language-configuration.json"
 			},
 			{
-				"id": "jsx-sublime-babel-tags",
+				"id": "jsx-tags",
 				"aliases": [],
 				"configuration": "./tags-language-configuration.json"
 			}
@@ -60,10 +60,10 @@
 				"scopeName": "source.js",
 				"path": "./syntaxes/sublime-babel.json",
 				"embeddedLanguages": {
-					"meta.jsx.js": "jsx-sublime-babel-tags",
-					"meta.tag.jsx": "jsx-sublime-babel-tags",
-					"meta.tag.js": "jsx-sublime-babel-tags",
-					"meta.tag.without-attributes.js": "jsx-sublime-babel-tags"
+					"meta.jsx.js": "jsx-tags",
+					"meta.tag.jsx": "jsx-tags",
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags"
 				}
 			},
 			{
@@ -71,10 +71,10 @@
 				"scopeName": "source.js",
 				"path": "./syntaxes/sublime-babel.json",
 				"embeddedLanguages": {
-					"meta.jsx.js": "jsx-sublime-babel-tags",
-					"meta.tag.jsx": "jsx-sublime-babel-tags",
-					"meta.tag.js": "jsx-sublime-babel-tags",
-					"meta.tag.without-attributes.js": "jsx-sublime-babel-tags"
+					"meta.jsx.js": "jsx-tags",
+					"meta.tag.jsx": "jsx-tags",
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags"
 				}
 			},
 			{

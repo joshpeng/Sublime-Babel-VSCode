@@ -1,4 +1,8 @@
 # Changelog
+v0.2.9
+- Default JSX single-line comments to block comment
+- Fixed Emmet expansion inside nested tags not working
+
 v0.2.8 Hot Fix
 - Fixed single-line comment regression from v0.2.7 for embedded JSX commenting
 
