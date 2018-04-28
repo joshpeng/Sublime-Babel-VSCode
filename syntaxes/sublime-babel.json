@@ -1376,7 +1376,7 @@
     },
     "literal-arrow-function-implicit": {
       "contentName": "meta.jsx.js",
-      "begin": "(?<==>)(?=\\s*<[_$a-zA-Z])|(<)",
+      "begin": "(<)|(?<==>)(?=\\s*<[_$a-zA-Z])",
       "end": "(/>)|(</)(.*?)(>)",
       "endCaptures": {
         "1": { "name": "meta.tag.jsx punctuation.definition.tag.end.jsx" },
@@ -1728,4 +1728,3 @@
     }
   }
 }
-
