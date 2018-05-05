@@ -1,4 +1,7 @@
 # Changelog
+v0.2.10
+- Fixed [#30](https://github.com/joshpeng/Sublime-Babel-VSCode/issues/30). Support "<></>" React.Fragment short syntax. Thanks [@brneto](https://github.com/brneto)
+
 v0.2.9
 - Default JSX single-line comments to block comment
 - Fixed Emmet expansion inside nested tags not working
